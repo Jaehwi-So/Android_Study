@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 버튼 클릭 전에 참조할 이미지 -->
+    <item android:drawable="@drawable/b_alarm"
+          android:state_pressed="false"/>
+
+    <!-- 버튼 클릭 후에 참조할 이미지 -->
+    <item android:drawable="@drawable/a_alarm"
+        android:state_pressed="true"/>
+
+</selector>
