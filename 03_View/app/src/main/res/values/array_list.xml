@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- String[] car = {"소나타", "티코", "sm7"} -->
+    <string-array name="car">
+        <item>소나타</item>
+        <item>티코</item>
+        <item>푸조</item>
+    </string-array>
+
+    <string-array name="test">
+        <item>나루토1</item>
+        <item>나루토2</item>
+        <item>나루토3</item>
+        <item>나루토4</item>
+        <item>나루토5</item>
+        <item>나루토6</item>
+        <item>나루토7</item>
+        <item>나루토8</item>
+        <item>나루토9</item>
+        <item>나루토10</item>
+    </string-array>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
