@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrameActivity"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Hello World!"
+        android:background="#B4F1A9"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="안녕"
+        android:background="#6FD1CE"
+        android:layout_margin="15dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FCAAFF"
+        android:text="hi"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#000"
+        android:textColor="#fff"
+        android:text="left_bottom"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#f00"
+        android:text="우 하단"
+        android:layout_gravity="bottom|right"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#97A327"
+        android:text="center"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"/>
+
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

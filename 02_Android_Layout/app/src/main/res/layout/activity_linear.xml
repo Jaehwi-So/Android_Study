@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--부모 layout
+LinearLayout : 방향성(orientation)을 가지며 배치하는 layout.-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinearActivity"
+    android:orientation="vertical">   <!--방향성 : horizontal-수평 vertical-수직-->
+
+    <!--자식 layout(클래스)
+    안에는 layout의 변수가 선언되어있다(소문자)-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Linear"
+        android:background="#aaf"
+        android:textColor="#fff"
+        android:textSize="30dp"/>
+    <!--모든 부모자식 요소들은 width와 height를 가져야 한다.-->
+    <!--match_parent : 부모 요소에 맞춤.
+        wrap_content : 컨텐츠 크기 만큼의 공간을 확보함.
+        fill_parent : match_parent로 향상되었으므로 거의사용x-->
+
+    <!--background, textColor, textSize 등으로 속성설정
+    사이즈 단위 dp(device independent pixel) : 디바이스의 독립적인 픽셀 값
+    안드로이드는 다양한 해상도의 디바이스를 고려하여 dp단위를 사용하도록 권장-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Linear2"
+        android:background="#bbd"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="Hello Linear3"
+        android:background="#ddf"/>
+
+    <!--자식 레이아웃으로 LinearLayout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00f">
+        <!--버튼-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button1"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button2"></Button>
+    </LinearLayout>
+
+    <!--미리보기버튼-->
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--체크상자-->
+    <CheckBox
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Checkbox"
+        android:background="#acf"/>
+    <CheckBox
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:text="Checkbox"
+        android:background="#bcf"/>
+
+    <!--라디오 버튼-->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#aaa">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton1"></RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton2"></RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton3"></RadioButton>
+    </RadioGroup>
+
+    <!--입력상자-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="값을 입력하세요"></EditText>
+
+    <!--대기중을 표시하는 바-->
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ProgressBar>
+
+    <!--별점주기 바-->
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></RatingBar>
+</LinearLayout>
