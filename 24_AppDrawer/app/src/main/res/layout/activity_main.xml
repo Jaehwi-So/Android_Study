@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/drawer_layout">
+    <!--drawerLayout : 메인컨텐츠로 사용할 내용과 서랍으로 사용할 내용을 따로정의-->
+
+    <!--메인으로 사용할 레이아웃-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--타이틀로 사용할 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#BACDDC39"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/ic_launcher_round"
+                android:id="@+id/btn_open"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="제목"
+                android:textColor="#000"
+                android:gravity="center"
+                android:paddingRight="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="메인페이지"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--메인으로 사용할 레이아웃-->
+
+    <!--서랍으로 사용할 레이아웃-->
+    <!--layout_gravity 자동완성 안됨. 왼쪽바깥에 붙이고싶으면 start, 오른쪽바깥에 붙이고싶으면 end-->
+    <LinearLayout
+        android:layout_gravity="start"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#BF4CAF50"
+        android:padding="10dp"
+        android:id="@+id/drawer">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="서랍 영역"
+            android:textSize="30dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="서랍 닫기"
+            android:id="@+id/btn_close"/>
+
+    </LinearLayout>
+    <!--서랍으로 사용할 레이아웃-->
+
+</androidx.drawerlayout.widget.DrawerLayout>
